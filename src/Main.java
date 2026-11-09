@@ -1,15 +1,19 @@
 public class Main {
-
-    public int addNumbers(int x, int y){
+    public static void main(String[] args) {
+        System.out.println("numbers " + addNumbers(1,2));
+        System.out.println("three numbers " + addThreeNumbers(1,2,3));
+        System.out.println("Subtracted numbers" + subtractNumbers(1,2));
+    }
+    public static int addNumbers(int x, int y){
         return x + y;
     }
 
-    public int addThreeNumbers(int x, int y, int z){
+    public static int addThreeNumbers(int x, int y, int z){
         int temp = addNumbers(x, y);
         return addNumbers(z, temp);
     }
 
-    public int subtractNumbers(int x, int y){
+    public static int subtractNumbers(int x, int y){
         return x - y;
     }
 }
