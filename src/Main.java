@@ -8,4 +8,8 @@ public class Main {
         int temp = addNumbers(x, y);
         return addNumbers(z, temp);
     }
+
+    public int subtractNumbers(int x, int y){
+        return x - y;
+    }
 }
